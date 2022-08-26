@@ -65,7 +65,7 @@ footer{
     padding: 2.7vw 8vw;
     display: flex;
     justify-content: space-between;
-    height: 86.29px;
+    /* height: 86.29px; */
 }
 .footer__column{
     display: flex;
@@ -634,15 +634,11 @@ a{
         width: auto;
         height: 100%;
         /* transform: scale(0.8); */
-    /* } */ */
+    /* } */
     footer{
-       
         padding: 63.5px 20px;
         flex-direction: column;
         height: auto;
-        /* display: flex;
-        justify-content: space-between;
-        height: 86.29px; */
     }
     .halves_block{
         height: auto;
