@@ -509,6 +509,7 @@ a{
     display: none;
 }
 
+
 /* //980 */
 @media (max-width: 780px) {
     header{
@@ -519,7 +520,7 @@ a{
         line-height: 46.32px;
     }
     .mobile{
-        display: block;
+        display: flex;
     }
     
     .header__menu{
@@ -558,8 +559,10 @@ a{
         display: flex;
         justify-content: center;
         margin-right: -40px;
-        margin-top: 60px;
         margin-bottom: 40px;
+    }
+    .box_text .address{
+        padding: 0 20px ;
     }
     .menu_social li{
         margin-right: 40px;
@@ -578,6 +581,60 @@ a{
     ul{
         list-style: none;
     }
+    .gallery_mobile{
+        display: flex;
+        flex-direction: column;
+        /* height: 400px; */
+        /* padding: 0 10px; */
+        box-sizing: border-box;
+    }
+    .gallery_mobile_images{
+        display: flex;
+        overflow-x: scroll;
+
+        scroll-behavior: smooth;
+        scroll-snap-align: start;
+        scroll-snap-type: x mandatory;
+        height: 330px;
+        width: 100%;
+    }
+    /* ///// */
+    .gallery_mobile_images img{
+        height: 100%;
+        width: auto;
+        /* scroll-snap-align: start; */
+    }
+    /* ////// */
+    .gallery_mobile_btns{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .arrow_right{
+        transform: rotate(180deg);
+    }
+    /* .gallery_mobile_images .img_container{
+        position: relative;
+        height: 100%;
+        width: 360px;
+        overflow: hidden;
+
+    }
+    .gallery_mobile_images .img_container img{
+        position: absolute;
+        object-fit: cover;
+        
+    }
+    .gallery_mobile_images .narrow img{
+        width: 100%;
+        height: auto;
+
+    }
+    .gallery_mobile_images .wide img{
+        width: auto;
+        height: 100%;
+        /* transform: scale(0.8); */
+    /* } */ */
     footer{
        
         padding: 63.5px 20px;
@@ -700,9 +757,16 @@ a{
         font-size: 18px;
         margin-bottom: 51.5px;
     }
+
+    /* .absolute_container{
+        position: static;
+    } */
+   
     .contacts_box{
         position: relative;
         width: 100%;
+        /* height: auto;
+        min-height: 316px; */
         margin-bottom: 10px;
         overflow: hidden;
         right: 0;
@@ -710,13 +774,13 @@ a{
       
         overflow: hidden;
     }
-    .box_text .menu_social{
-        margin-top: 0;
-    }
     .box_background_img{
         overflow: hidden;
+        /* height: 100%;
+        width: auto; */
     }
-    .sliding_track{
+
+    /* .sliding_track{
         animation: none;
         overflow-x: unset;
     }
@@ -724,12 +788,18 @@ a{
         display: flex;
         width: 100%;
         overflow-x: scroll;
-    }
-    .gallery_line{
+    } */
+    /* .absolute_container{
+        display: none;
+    } */
+    /* .gallery_line{
         overflow-x: hidden;
         width: fit-content;
     }
     .clone{
+        display: none;
+    } */
+    .gallery_desktop{
         display: none;
     }
 

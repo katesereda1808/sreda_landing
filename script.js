@@ -19,3 +19,19 @@ for (let i = 0; i < all_close_menu.length; i++) {
         }
     })
 }
+
+
+const img_gallery = document.querySelector('.gallery_mobile_images');
+const arrow_left = document.querySelector('.arrow_left');
+const arrow_right = document.querySelector('.arrow_right');
+
+arrow_left.addEventListener('click', ()=>{
+    console.log('arrow_left')
+  img_gallery.scrollLeft-=300;
+})
+arrow_right.addEventListener('click', ()=>{
+    console.log('arrow_right')
+  img_gallery.scrollLeft+=300;
+})
+
+// arrow_right
