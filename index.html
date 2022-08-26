@@ -42,7 +42,7 @@
 
             </div>
         </div> -->
-        <div class="header__menu_mobile hidden mobile">
+        <div class="header__menu hidden mobile">
             <div class="header__menu_container">
                 <button class="close_menu_btn">
                     <img src="./assets/icons/close_btn.svg" alt="">
@@ -103,6 +103,36 @@
                 </div>
 
             </div>
+        </div>
+        <div class="header__menu menu_desktop hidden desktop">
+            <!-- <div class="header__menu_container"> -->
+                <button class="close_menu_btn">
+                    <img src="./assets/icons/close_btn.svg" alt="">
+                </button>
+                <div class="menu_content">
+                    <nav class="header__nav">
+                        <ul>
+                            <li class="menu_item chosen_item">
+                                <a href="">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="">
+                                    Запись
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            <!-- </div> -->
+
         </div>
     </header>
     <main>
@@ -180,6 +210,14 @@
         </div>
         <div class="main__block_3">
             <div class="halves_block">
+                <div class="btns mobile">
+                    <a class="btn btn_fill" href="#">
+                        записаться <img class="dot" src="./assets/icons/dot.svg" alt="">
+                    </a>
+                    <a class="btn btn_contour" href="https://sreda.co/">
+                        наш сайт <img class="dot" src="./assets/icons/dot.svg" alt="">
+                    </a>
+                </div>
                 <div class="img_half half">
                     <img class="main_block_3_img" src="./assets/images/block_3_img.jpg" alt="">
                 </div>
@@ -210,14 +248,16 @@
                                 </li>
                             </ul>
                         </div>
-                        <a class="btn btn_fill" href="#">
-                            записаться <img class="dot" src="./assets/icons/dot.svg" alt="">
-                        </a>
-                            <!-- // внешняя ссылка -->
-                        <a class="btn btn_contour" href="https://sreda.co/">
-                            наш сайт <img class="dot" src="./assets/icons/dot.svg" alt="">
-                        </a>
+                        <div class="btns_desktop desktop">
+                            <a class="btn btn_fill" href="#">
+                                записаться <img class="dot" src="./assets/icons/dot.svg" alt="">
+                            </a>
+                            <a class="btn btn_contour" href="https://sreda.co/">
+                                наш сайт <img class="dot" src="./assets/icons/dot.svg" alt="">
+                            </a>
 
+                        </div>
+                        
                     </div>
                     
 
@@ -225,25 +265,23 @@
             </div>
         </div>
         <div class="main__block_4">
-
-
-            <div class="contacts_box">
+            <div class="contacts_box mobile">
                 <img class="box_background_img" src="./assets/images/alexander-popov-V2k_MYodM50-unsplash 1.jpg" alt="">
                 <div class="box_text">
                     <ul class="menu_social">
                         <li>
                             <a href="">
-                                <img src="./assets/icons/vk.svg" alt="">
+                                <img src="./assets/icons/vk_white.svg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./assets/icons/dzen.svg" alt="">
+                                <img src="./assets/icons/dzen_white.svg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./assets/icons/youtube.svg" alt="">
+                                <img src="./assets/icons/youtube_white.svg" alt="">
                             </a>
                         </li>
                     </ul>
@@ -254,13 +292,55 @@
                         hello@sreda.co
                     </p>
                     <p class="address">
-                        Пресненская наб., 12, Москва-Сити,
+                        Пресненская наб.,<br>
+                         12, Москва-Сити,
                         Федерация-Восток
                     </p>
                     
                 </div>
             </div>
-            <div class="gallery desktop">
+            <div class="absolute_container desktop">
+                <div class="contacts_box">
+                    <img class="box_background_img" src="./assets/images/alexander-popov-V2k_MYodM50-unsplash 1.jpg" alt="">
+                    <div class="box_text">
+                        <ul class="menu_social">
+                            <li>
+                                <a href="">
+                                    <img src="./assets/icons/vk_white.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/icons/dzen_white.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/icons/youtube_white.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="contacts">
+                            +7 (495) 118-39-37
+                        </p>
+                        <p class="contacts">
+                            hello@sreda.co
+                        </p>
+                        <p class="address">
+                            Пресненская наб.,<br>
+                             12, Москва-Сити,
+                            Федерация-Восток
+                        </p>
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+
+            
+            <div class="gallery">
+                
                 <div class="gallery_line">
                     <div class="sliding_track track_1">
                         <div class="img_container narrow">
@@ -284,22 +364,22 @@
     
     
     
-                        <div class="img_container narrow">
+                        <div class="img_container narrow clone">
                             <img src="./assets/images/photo_2022-07-21_14-20-39.jpg" alt="">
                         </div>
-                        <div class="img_container wide">
+                        <div class="img_container wide clone">
                             <img src="./assets/images/PHVG5443 1.jpg" alt="">
                         </div>
-                        <div class="img_container narrow">
+                        <div class="img_container narrow clone">
                             <img src="./assets/images/PHVG5226.jpg" alt="">
                         </div>
-                        <div class="img_container wide">
+                        <div class="img_container wide clone">
                             <img src="./assets/images/block_5_img.png" alt="">
                         </div>
-                        <div class="img_container narrow">
+                        <div class="img_container narrow clone">
                             <img src="./assets/images/PHVG5231.jpg" alt="">
                         </div>
-                        <div class="img_container wide">
+                        <div class="img_container wide clone">
                             <img src="./assets/images/photo_2022-07-21_14-18-00.jpg" alt="">
                         </div>
 
@@ -317,12 +397,9 @@
                         <div class="img_container narrow">
                             <img src="./assets/images/PHVG5338.jpg" alt="">
                         </div>
-                        
                         <div class="img_container wide">
                             <img src="./assets/images/vlad-ion-khbXX6pbDSs-unsplash.jpg" alt="">
                         </div>
-    
-                       
                         <div class="img_container narrow">
                             <img src="./assets/images/PHVG5383.jpg" alt="">
                         </div>
@@ -337,25 +414,23 @@
 
 
 
-                        <div class="img_container narrow">
+                        <div class="img_container narrow clone">
                             <img src="./assets/images/PHVG5254.jpg" alt="">
                         </div>
-                        <div class="img_container narrow">
+                        <div class="img_container narrow clone">
                             <img src="./assets/images/PHVG5338.jpg" alt="">
                         </div>
                         
-                        <div class="img_container wide">
+                        <div class="img_container wide clone">
                             <img src="./assets/images/vlad-ion-khbXX6pbDSs-unsplash.jpg" alt="">
                         </div>
-    
-                       
-                        <div class="img_container narrow">
+                        <div class="img_container narrow clone">
                             <img src="./assets/images/PHVG5383.jpg" alt="">
                         </div>
-                        <div class="img_container wide">
+                        <div class="img_container wide clone">
                             <img src="./assets/images/PHVG5440.jpg" alt="">
                         </div>
-                        <div class="img_container wide">
+                        <div class="img_container wide clone">
                             <img src="./assets/images/PHVG5173.jpg" alt="">
                         </div>
                         
@@ -398,23 +473,29 @@
                         <div class="img_container narrow">
                             <img src="./assets/images/PHVG5484.jpg" alt="">
                         </div>
+                        <div class="img_container narrow">
+                            <img src="./assets/images/photo_2022-07-21_14-18-02.jpg" alt="">
+                        </div>
 
 
 
-                        <div class="img_container wide">
+                        <div class="img_container wide clone">
                             <img src="./assets/images/tobias-reich-MdD0pdRgnwQ-unsplash.jpg" alt="">
                         </div>
-                        <div class="img_container wide">
+                        <div class="img_container wide clone">
                             <img src="./assets/images/aurelien-romain-0xs7N5OY-1M-unsplash 1.jpg" alt="">
                         </div>
-                        <div class="img_container narrow">
+                        <div class="img_container narrow clone">
                             <img src="./assets/images/PHVG5487.jpg" alt="">
                         </div>
-                        <div class="img_container wide">
+                        <div class="img_container wide clone">
                             <img src="./assets/images/photo_2022-07-21_14-20-40.jpg" alt="">
                         </div>
-                        <div class="img_container narrow">
+                        <div class="img_container narrow clone">
                             <img src="./assets/images/PHVG5484.jpg" alt="">
+                        </div>
+                        <div class="img_container narrow clone">
+                            <img src="./assets/images/photo_2022-07-21_14-18-02.jpg" alt="">
                         </div>
 
                     </div>
@@ -469,7 +550,7 @@
                 <img src="./assets/icons/logo.svg" alt="">
             </div>
             
-            <div class="footer__brand">
+            <div class="footer__brand desktop">
                 © 2018-2022 Коворкинг SREDA 
             </div>
         </div>
@@ -492,6 +573,10 @@
             </nav>
             <div class="footer__atank_logo">
                 <img src="./assets/icons/atank_logo.svg" alt="">
+                <p>Сделано с любовью в Atank</p>
+            </div>
+            <div class="footer__brand mobile">
+                © 2018-2022 Коворкинг SREDA 
             </div>
 
         </div>

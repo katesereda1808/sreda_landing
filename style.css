@@ -13,6 +13,8 @@ body{
 ul{
     list-style: none;
 }
+
+
 header{
     display: flex;
     justify-content: space-between;
@@ -20,6 +22,36 @@ header{
     padding: 4vw 8vw;
     position: relative;
 }
+.menu_desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    position: absolute;
+    right: 8vw;
+    background-color: #ffff;
+}
+.menu_desktop .menu_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    min-width: 137px;
+    background-color: #F3F3F3;
+
+}
+.menu_desktop .chosen_item{
+    background-color: #E1E1E1;
+}
+.menu_chosen{
+    background-color: #E1E1E1;
+}
+.menu_desktop .menu_content{
+    /* background-color: #B0B0B0; */
+    font-size: 16;
+    font-weight: 700;
+}
+
 
 button{
     border: none;
@@ -48,6 +80,13 @@ footer{
 }
 .footer__column.column_2{
     align-items: flex-end;
+}
+.footer__atank_logo{
+    display: flex;
+}
+.footer__atank_logo p{
+    margin-left: 11px;
+    align-self: center;
 }
 .footer__atank_logo img{
     height: 33.36px;
@@ -176,6 +215,12 @@ a{
     font-weight: 500;
     line-height: 36px;
 }
+.line_1 .line_text, .line_3 .line_text{
+    margin-left: 20px;
+}
+.line_2 .line_text{
+    margin-left: 20px;
+}
 .line_number_half{
     height: 100%;
     display: flex;
@@ -255,6 +300,10 @@ a{
     top: -27%;
     object-fit: cover;
 }
+.btns_desktop{
+    display: flex;
+    flex-direction: column;
+}
 
 
 .gallery_line{
@@ -263,9 +312,10 @@ a{
     margin: 10px 0;
     width: 100%;
     overflow-x: hidden;
-    position: relative;
+    /* position: relative; */
     transition: none;
 }
+
 /* .sliding_track:hover{
     animation-play-state: paused;
 } */
@@ -273,6 +323,7 @@ a{
     display: flex;
     /* width: calc(250px * 14); */
     width: fit-content;
+    width: (calc(-2187px * 2));
     animation: scroll 40s linear infinite;
     transition: none;
 }
@@ -288,11 +339,17 @@ a{
       transform: translateX(0);
     }
     100% { 
+
+        /* // (470 + 259)* 3 =
+        // 
+        2187 */
+
+
         /* //249 * 3
         // 460 * 3 */
         /* 700? */
     
-      transform: translateX(calc(-700px * 3));
+      transform: translateX(-2187px);
       /* transform: translateX(-3000); */
     }
   }
@@ -336,12 +393,30 @@ a{
     left: 0;
     object-fit: cover;
 }
-.contacts_box{
+/* .main__block_4{
     position: relative;
+} */
+/* .gallery{
+    position: relative;
+    width: 100%;
+} */
+.gallery_line{
+    /* position: relative; */
+}
+.absolute_container{
+    width: 100vw;
+    height: 10px;
+    position: absolute;
+}
+.contacts_box{
     height: 330px;
     width: 100%;
     overflow: hidden;
     z-index: 1;
+    width: 684px;
+    position: absolute;
+    right: 30%;
+    top: 340px;
     
 }
 .box_background_img{
@@ -362,8 +437,33 @@ a{
     color: #ffff;
     font-size: 24px;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.box_text .menu_social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    margin-right: -40px;
+    /* height: 50px; */
+}
+.box_text .menu_social li{
+    margin-right: 40px;
+}
+.box_text .contacts{
+    margin-bottom: 10px;
+}
+.box_text .address{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    max-width: 465px;
+    text-align: center;
+}
 
 
 .form_block{
@@ -399,17 +499,18 @@ a{
 .form_block .btn{
     margin-bottom: 10px;
 }
-
-
-.hidden{
+.mobile{
     display: none;
 }
-.mobile{
+.desktop{
+    display: flex;
+}
+.hidden{
     display: none;
 }
 
 /* //980 */
-@media (max-width: 554px) {
+@media (max-width: 780px) {
     header{
         /* display: flex;
         justify-content: space-between; */
@@ -421,7 +522,7 @@ a{
         display: block;
     }
     
-    .header__menu_mobile{
+    .header__menu{
         display: flex;
         position: absolute;
         z-index: 2;
@@ -432,7 +533,7 @@ a{
         height: 100vh;
         justify-content: flex-end;
     }
-    .header__menu_mobile .header__menu_container{
+    .header__menu .header__menu_container{
         background-color: #F3F3F3;
         width: 70%;
         display: flex;
@@ -440,7 +541,7 @@ a{
         align-items: flex-end;
         padding: 26px 20px;
     }
-    .header__menu_mobile .menu_content{
+    .header__menu .menu_content{
         width: 100%;
         text-align: center;
     }
@@ -507,6 +608,10 @@ a{
         font-size: 38px;
         line-height: 46.32px;
         
+    }
+    .main__block_1 .img_part img{
+        height: 100%;
+        width: auto;
     }
 
     .main__block_1 .btn{
@@ -576,8 +681,57 @@ a{
     }
     .main__block_3 .text_half .content {
         padding-left: 20px;
+        padding-bottom: 20px;
     }
-
+    .btns.mobile .btn{
+        width: 100%;
+    }
+    footer .logo{
+        margin-bottom: 48px;
+    }
+    .footer__nav li{
+        margin-left: 0;
+        margin-bottom: 24px;
+    }
+    .footer__column.column_2{
+        align-items: flex-start;
+    }
+    .footer__atank_logo p{
+        font-size: 18px;
+        margin-bottom: 51.5px;
+    }
+    .contacts_box{
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+        overflow: hidden;
+        right: 0;
+        top: 0;
+      
+        overflow: hidden;
+    }
+    .box_text .menu_social{
+        margin-top: 0;
+    }
+    .box_background_img{
+        overflow: hidden;
+    }
+    .sliding_track{
+        animation: none;
+        overflow-x: unset;
+    }
+    .gallery{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .gallery_line{
+        overflow-x: hidden;
+        width: fit-content;
+    }
+    .clone{
+        display: none;
+    }
 
     .desktop{
         display: none;
@@ -588,7 +742,14 @@ a{
     
 }
 /* 1024 */
-
+@media (max-width: 484px) {
+    .box_background_img{
+        overflow: hidden;
+        height: 100%;
+        width: auto;
+    }
+    
+}
 
 @media (max-width: 321px) {
     .line_text{
