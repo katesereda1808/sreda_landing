@@ -661,11 +661,11 @@ a{
     }
     .gallery_mobile_images{
         display: flex;
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
 
         scroll-behavior: smooth;
         /* scroll-snap-align: start; */
-        scroll-snap-type: x mandatory;
+        /* scroll-snap-type: x mandatory; */
         height: 330px;
         width: 100%;
     }
@@ -677,6 +677,18 @@ a{
         height: 100%;
         width: auto;
         scroll-snap-align: center;
+    }
+    .gallery_mobile_images .img_container{
+        position: relative;
+        height: 100%;
+        width: 360px;
+        /* overflow: hidden; */
+    }
+    .gallery_mobile_images .img_container img{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
     }
     /* ////// */
     .gallery_mobile_btns{
