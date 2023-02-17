@@ -425,7 +425,9 @@ a{
     z-index: 1;
     width: 684px;
     position: absolute;
-    right: 30%;
+    /* right: 30%; */
+    right: 50%;
+    transform: translateX(50%);
     top: 340px;
     
 }
@@ -854,6 +856,8 @@ a{
    
     .contacts_box{
         position: relative;
+        right: 0;
+        transform: translateX(0%);
         width: 100%;
         /* height: auto;
         min-height: 316px; */
